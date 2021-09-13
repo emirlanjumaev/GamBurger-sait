@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.38) 100%);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.j-c-c {
+    justify-content: center;
+}
+
+.j-c-b {
+    justify-content: space-between;
+}
+
+.a-i-c {
+    align-items: center;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+$colorBlack:#363853;
+$colorOrange:#FF7A50;
+
+/*------------------------------------------
+--------------------------------------------
+        HEADER
+--------------------------------------------
+---------------------------------------------        
+*/
+
+.header {
+    .header-box {
+        margin-top: 104px;
+        .header-box-item {
+            position: relative;
+            flex: 0 0 50%;
+            .header-title {
+                font-weight: 500;
+                font-size: 66px;
+                line-height: 78px;
+                text-transform: capitalize;
+                max-width: 530px;
+                span {
+                    color: $colorOrange;
+                }
+            }
+            .header-links {
+                margin-top: 45px;
+                .header-link-1 {
+                    width: 163px;
+                    height: 50px;
+                    background-color: $colorOrange;
+                    text-align: center;
+                    display: inline-block;
+                    line-height: 50px;
+                    color: rgb(255, 255, 255);
+                    border-radius: 5px;
+                    margin-right: 30px;
+                }
+                .header-link-2 {
+                    text-decoration: underline;
+                    font-size: 20px;
+                    color: #363853;
+                }
+            }
+            .header-text {
+                margin-top: 23px;
+                max-width: 513px;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                text-transform: capitalize;
+            }
+            .header-bg {
+                max-width: 100%;
+            }
+        }
+    }
+    padding-top: 54px;
+    .header-top {
+        .header-logo {
+            .logo {
+                letter-spacing: 0.05em;
+                font-size: 33px;
+                a {
+                    color: $colorBlack;
+                }
+                &:first-letter {
+                    color: $colorOrange;
+                }
+            }
+        }
+        .nav {
+            margin: 0 0 0 auto;
+            .nav__link {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+                color: #363853;
+                padding: 0 30px;
+                transition: all .1s linear;
+                &.active,
+                &:hover {
+                    color: $colorOrange;
+                }
+            }
+        }
+        .header-right {
+            * {
+                padding: 0 30px;
+                cursor: pointer;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+            .fas {
+                font-size: 18px;
+                transition: all .1s linear;
+                &:hover {
+                    color: $colorOrange;
+                }
+                color: $colorBlack;
+            }
+            .sign-up {
+                display: inline-block;
+                width: 120px;
+                height: 50px;
+                background-color: $colorOrange;
+                text-align: center;
+                line-height: 50px;
+                color: #fff;
+                border-radius: 5px;
+                transition: all .1s linear;
+                box-shadow: 0px 22px 40px rgba(255, 104, 56, 0.19);
+                &:hover {
+                    box-shadow: 0px 12px 40px rgba(255, 104, 56, 0.69);
+                }
+            }
+        }
+    }
+}
